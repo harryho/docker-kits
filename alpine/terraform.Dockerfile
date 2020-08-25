@@ -21,9 +21,3 @@ RUN echo "${TERRAFORM_SHA256SUM}  terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 RUN echo "===> Removing package list..."  && \
     rm -rf /var/cache/apk/*  
 
-
-# WORKDIR /work
-
-# CMD ["/bin/bash"]
-
-# ENTRYPOINT ["/bin/terraform"]
