@@ -12,7 +12,6 @@ docker run --rm -it harryh00/docker-kits:alpine-terraform terraform --version
 printf "\n ::: apline k8s  kit ::: \n"
 docker run --rm -it harryh00/docker-kits:alpine-k8s \
     aws --version && \
-    eksctl version && \
     kubectl version --client 
 
 
