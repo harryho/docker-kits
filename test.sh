@@ -15,4 +15,6 @@ docker run --rm -it harryh00/docker-kits:alpine-k8s \
     kubectl version --client 
 
 
-
+## ubuntu
+printf "\n ::: ubuntu ansible kit ::: \n"
+docker run --rm -it harryh00/docker-kits:ubuntu-ansible ansible --version 
