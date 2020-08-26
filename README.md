@@ -22,8 +22,8 @@ Containers work a little like VMs, but in a far more specific and granular way. 
 
 * Stable versions
 
-    * harryh00/docker-kits:alpine3.8-ansible
-    * harryh00/docker-kits:alpine3.8-terraform
+    * harryh00/docker-kits:alpine-ansible
+    * harryh00/docker-kits:alpine-terraform
 
 
 ## How to use
@@ -33,10 +33,10 @@ Containers work a little like VMs, but in a far more specific and granular way. 
 
 ```
 # one-off use
-docker run --rm -it harryh00/docker-kits:alpine3.8-ansible  ansible --version 
+docker run --rm -it harryh00/docker-kits:alpine-ansible  ansible --version 
 
 # use the kit  without install ansible
-docker run --rm -it  -v ${PWD}:/app   -w /app harryh00/docker-kits:alpine3.8-ansible   /bin/bash 
+docker run --rm -it  -v ${PWD}:/app   -w /app harryh00/docker-kits:alpine-ansible   /bin/bash 
 
 ```
 
@@ -44,7 +44,7 @@ docker run --rm -it  -v ${PWD}:/app   -w /app harryh00/docker-kits:alpine3.8-ans
 
 ```
 # mount the local aws config to aws cli kit 
-docker run --rm -it -v ~/.aws:/root/.aws  harryh00/docker-kits:alpine3.8-aws2
+docker run --rm -it -v ~/.aws:/root/.aws  harryh00/docker-kits:alpine-aws2
 ```
 
 

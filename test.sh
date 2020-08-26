@@ -1,11 +1,19 @@
 #!/bin/bash
 
-printf "\n ::: aws cli 2 kit ::: \n"
-docker run --rm -it harryh00/docker-kits:alpine3.8-aws2  aws --version 
+printf "\n ::: apline aws cli 2 kit ::: \n"
+docker run --rm -it harryh00/docker-kits:alpine-aws2  aws --version 
 
-printf "\n ::: ansible kit ::: \n"
-docker run --rm -it harryh00/docker-kits:alpine3.8-ansible ansible --version 
+printf "\n ::: apline ansible kit ::: \n"
+docker run --rm -it harryh00/docker-kits:alpine-ansible ansible --version 
 
-printf "\n ::: terraform  kit ::: \n"
-docker run --rm -it harryh00/docker-kits:alpine3.8-terraform terraform --version 
+printf "\n ::: apline terraform  kit ::: \n"
+docker run --rm -it harryh00/docker-kits:alpine-terraform terraform --version 
+
+printf "\n ::: apline k8s  kit ::: \n"
+docker run --rm -it harryh00/docker-kits:alpine-k8s \
+    aws --version && \
+    eksctl version && \
+    kubectl version --client 
+
+
 
