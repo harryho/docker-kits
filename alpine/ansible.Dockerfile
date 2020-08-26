@@ -4,14 +4,7 @@ FROM alpine:3.8
 LABEL MAINTAINER Harry Ho
 
 
-RUN echo "===> Installing sudo to emulate normal OS behavior..."  && \
-    apk --update add sudo                                         && \
-    \
-    \
-    echo "===> add bash " && \ 
-    apk add --no-cache bash && \
-    \
-    echo "===> Installing Ansible..."  && \
+RUN echo "===> Installing Ansible..."  && \
     apk add ansible                  && \
     \
     \

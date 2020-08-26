@@ -9,7 +9,7 @@ ENV TERRAFORM_SHA256SUM=607bc802b1c6c2a5e62cc48640f38aaa64bef1501b46f0ae4829feb5
 
 
 RUN echo "===> Download terraform..."  && \
-    apk  --update --no-cache add bash git openssh curl && \
+    apk  --update --no-cache add openssh curl && \
     curl https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip > terraform_${TERRAFORM_VERSION}_linux_amd64.zip
     
     

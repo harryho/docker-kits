@@ -34,4 +34,6 @@ echo ":::: Push ${DOCKER_REPO}:alpine3.8-terraform"
 
 docker push ${DOCKER_REPO}:alpine3.8-terraform
 
+echo ":::: Push ${DOCKER_REPO}:alpine3.8-aws2"
 
+docker push ${DOCKER_REPO}:alpine3.8-aws2
