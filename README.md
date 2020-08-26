@@ -47,7 +47,11 @@ docker run --rm -it  -v ${PWD}:/app   -w /app harryh00/docker-kits:alpine-ansibl
 docker run --rm -it -v ~/.aws:/root/.aws  harryh00/docker-kits:alpine-aws2
 ```
 
+* Sample 3: use k8s cli kit 
 
+```
+docker run --rm -it -v ~/.kube:/root/.kube -v ~/.aws:/root/aws  harryh00/docker-kits:alpine-k8s
+```
 
 
 
