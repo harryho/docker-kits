@@ -28,7 +28,7 @@ Containers work a little like VMs, but in a far more specific and granular way. 
 
 ## How to use
 
-* Sample: use ansible kit 
+* Sample 1: use ansible kit 
   
 
 ```
@@ -39,6 +39,15 @@ docker run --rm -it harryh00/docker-kits:alpine3.8-ansible  ansible --version
 docker run --rm -it  -v ${PWD}:/app   -w /app harryh00/docker-kits:alpine3.8-ansible   /bin/bash 
 
 ```
+
+* Sample 2: use aws cli kit 
+
+```
+# mount the local aws config to aws cli kit 
+docker run --rm -it -v ~/.aws:/root/.aws  harryh00/docker-kits:alpine3.8-aws2
+```
+
+
 
 
 

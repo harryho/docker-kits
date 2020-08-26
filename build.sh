@@ -19,6 +19,9 @@ echo ":::: Build ${DOCKER_REPO}:alpine3.8-terraform"
 
 docker build alpine -f alpine/terraform.Dockerfile -t ${DOCKER_REPO}:alpine3.8-terraform
 
+echo ":::: Build ${DOCKER_REPO}:alpine3.8-aws2"
+
+docker build alpine -f alpine/aws2.Dockerfile -t ${DOCKER_REPO}:alpine3.8-aws2
 
 # Push images
 
