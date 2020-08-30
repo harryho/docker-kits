@@ -1,7 +1,7 @@
 # pull base mage
 FROM ubuntu:18.04
 
-LABEL MAINTAINER Harry Ho
+LABEL maintainer="Harry Ho"
 
 
 RUN echo "===> apt-get update ..."  && \

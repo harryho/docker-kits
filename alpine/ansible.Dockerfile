@@ -1,7 +1,7 @@
 # pull base image
 FROM alpine
 
-LABEL MAINTAINER Harry Ho
+LABEL maintainer="Harry Ho"
 
 
 RUN echo "===> Installing Ansible..."  && \
@@ -14,6 +14,7 @@ RUN echo "===> Installing Ansible..."  && \
     \
     \
     echo "===> Install aws boto mobule" && \
+    pip3 install --upgrade pip3 && \
     pip3 install boto3 botocore && \
     \
     \

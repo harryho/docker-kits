@@ -1,7 +1,7 @@
 # pull base image
 FROM alpine
 
-LABEL MAINTAINER Harry Ho
+LABEL maintainer="Harry Ho"
 
 
 ENV GLIBC_VER=2.32-r0
