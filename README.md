@@ -21,7 +21,7 @@ Containers work a little like VMs, but in a far more specific and granular way. 
 
 ## Images and tags
 
-### Alpine based kit
+### Alpine base kit
 
 * harryh00/docker-kits:alpine-ansible
 * harryh00/docker-kits:alpine-terraform
@@ -29,13 +29,13 @@ Containers work a little like VMs, but in a far more specific and granular way. 
 * harryh00/docker-kits:alpine-aws2
 
 
-### Ubuntu based kit
+### Ubuntu base kit
 
 * harryh00/docker-kits:ubuntu-ansible
 
 
 
-### CentOS based kit
+### CentOS base kit
 
 * harryh00/docker-kits:centos-ansible
 
