@@ -2,7 +2,7 @@
 
 ## Summary
 
-The repository is the collection of kits built on the top of docker image. 
+The repository is the collection of kits built on the top of docker image. At the very begiinning, the repository was built for kits used for infrastructure. It is about to expand the scope from infrastructure to simplify the integration test, even build for speical development.
 
 Repository name in Docker Hub: [harryh00/docker-kits](https://hub.docker.com/r/harryh00/docker-kits)
 
