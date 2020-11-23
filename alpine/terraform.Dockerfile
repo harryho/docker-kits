@@ -1,7 +1,7 @@
 # pull base image
 FROM alpine
 
-LABEL MAINTAINER Harry Ho
+LABEL maintainer="Harry Ho"
 
 
 ENV TERRAFORM_VERSION=0.12.26
@@ -17,6 +17,7 @@ RUN echo "${TERRAFORM_SHA256SUM}  terraform_${TERRAFORM_VERSION}_linux_amd64.zip
     sha256sum -cs terraform_${TERRAFORM_VERSION}_SHA256SUMS && \
     unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip -d /bin && \
     rm -f terraform_${TERRAFORM_VERSION}_linux_amd64.zip  
+
 
 RUN echo "===> Removing package list..."  && \
     rm -rf /var/cache/apk/*  

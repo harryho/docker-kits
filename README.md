@@ -1,7 +1,8 @@
 # Docker Kits
 
-## Summary 
-The repository is the collection of tool kits built on the top of docker image. 
+## Summary
+
+The repository is the collection of kits built on the top of docker image. At the very begiinning, the repository was built for kits used for infrastructure. It is about to expand the scope from infrastructure to simplify the integration test, even build for speical development.
 
 Repository name in Docker Hub: [harryh00/docker-kits](https://hub.docker.com/r/harryh00/docker-kits)
 
@@ -20,16 +21,29 @@ Containers work a little like VMs, but in a far more specific and granular way. 
 
 ## Images and tags
 
-* Stable versions
+### Alpine based kit
 
-    * harryh00/docker-kits:alpine-ansible
-    * harryh00/docker-kits:alpine-terraform
+* harryh00/docker-kits:alpine-ansible
+* harryh00/docker-kits:alpine-terraform
+* harryh00/docker-kits:alpine-k8s
+* harryh00/docker-kits:alpine-aws2
+
+
+### Ubuntu based kit
+
+* harryh00/docker-kits:ubuntu-ansible
+
+
+
+### CentOS based kit
+
+* harryh00/docker-kits:centos-ansible
+
 
 
 ## How to use
 
-* Sample 1: use ansible kit 
-  
+* Sample 1: use ansible kit
 
 ```
 # one-off use
