@@ -10,7 +10,7 @@ RUN echo "===> Installing Ansible..."  && \
     \
     echo "===> Adding Python runtime..."  && \
     apk --update add python3 && \
-    apk --update add py3-pip openssl ca-certificates    && \
+    apk --update add py3-pip openssl ca-certificates git   && \
     \
     \
     echo "===> Install aws boto mobule" && \

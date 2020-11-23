@@ -8,7 +8,7 @@ ARG AWS_IAM_AUTH_VERSION_URL=https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.
 
 # Install kubectl (same version of aws esk)
 RUN echo "===> Installkubectl " &&  \
-    apk add --update --no-cache curl && \
+    apk add --update --no-cache curl git && \
     curl -LO https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl && \
     mv kubectl /usr/bin/kubectl && \
     chmod +x /usr/bin/kubectl
