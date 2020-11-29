@@ -10,7 +10,7 @@ ENV GLIBC_VER=2.32-r0
 # You will see some warning during the build process.
 # e.g. /usr/glibc-compat/lib/ld-linux-x86-64.so.2 is not a symbolic link
 RUN echo "===> Installing binutils , curl" &&  \
-    apk --no-cache add binutils  curl && \
+    apk --no-cache add binutils  curl git && \
     \
     \
     echo "===> Download & install glibc " &&  \
