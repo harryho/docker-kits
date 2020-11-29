@@ -1,6 +1,12 @@
 #!/bin/bash
 
-DOCKER_REPO='harryh00/docker-kits'
+DOCKER_REPO=$1
+
+if [ -z "$1" ]; then 
+    DOCKER_REPO='harryh00/docker-kits' 
+fi
+
+echo docker repo: $DOCKER_REPO
 
 #########################################################################################
 ## --------------------- Build images  ---------------------------
@@ -36,9 +42,9 @@ main() {
     docker login
     docker info
     FOLDERS=(
-        # alpine
+        alpine
         # ubuntu
-        centos
+        # centos
     )
     for FOLDER in ${FOLDERS[@]}; do
         # echo $FOLDER

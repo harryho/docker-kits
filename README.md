@@ -67,5 +67,12 @@ docker run --rm -it -v ~/.aws:/root/.aws  harryh00/docker-kits:alpine-aws2
 docker run --rm -it -v ~/.kube:/root/.kube -v ~/.aws:/root/.aws  harryh00/docker-kits:alpine-k8s
 ```
 
+### How to build & push 
 
+By default the script will build and push image to [harryh00/docker-kits](https://hub.docker.com/r/harryh00/docker-kits), but you can simply provide your docker repository to build these images to your repo.
+
+```
+./build.sh <your_docker_repo>
+
+```
 
