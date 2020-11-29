@@ -13,8 +13,7 @@ RUN echo "===> Installing Ansible..."  && \
     apk --update add py3-pip openssl ca-certificates git   && \
     \
     \
-    echo "===> Install aws boto mobule" && \
-    pip3 install --upgrade pip3 && \
+    echo "===> Install aws boto" && \
     pip3 install boto3 botocore && \
     \
     \
