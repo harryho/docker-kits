@@ -3,6 +3,8 @@ FROM alpine
 LABEL maintainer="Harry Ho"
 
 ARG KUBECTL_VERSION=1.17.5
+ARG EKSCTL_VERSION=0.32.0
+
 
 # https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html
 ARG AWS_IAM_AUTH_VERSION_URL=https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.9/2020-08-04/bin/linux/amd64/aws-iam-authenticator
@@ -21,14 +23,13 @@ RUN curl -LO ${AWS_IAM_AUTH_VERSION_URL} && \
     chmod +x /usr/bin/aws-iam-authenticator
 
 # Install eksctl (latest version)
-RUN curl --silent --location "https://github.com/weaveworks/eksctl/releases/download/latest_release/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp && \
+RUN curl --silent --location "https://github.com/weaveworks/eksctl/releases/download/${EKSCTL_VERSION}/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp && \
     mv /tmp/eksctl /usr/bin && \
     chmod +x /usr/bin/eksctl
 
 # Install awscli
 RUN apk add --update --no-cache python3 && \
     python3 -m ensurepip && \
-    pip3 install --upgrade pip3 && \
     pip3 install awscli yq
 
 # Install jq

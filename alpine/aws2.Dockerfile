@@ -22,7 +22,8 @@ RUN echo "===> Installing binutils , curl" &&  \
         glibc-bin-${GLIBC_VER}.apk &&  \
     echo "===> Download & install aws cli v2 " &&  \
     curl -sL https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip &&  \
-    unzip awscliv2.zip aws/install &&  \
+    unzip awscliv2.zip && \
+    aws/install &&  \
     rm -rf \
         awscliv2.zip \
         aws \
